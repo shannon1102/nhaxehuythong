@@ -1,46 +1,91 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <title>
-        Nhaxehuythong.com</title>
-    <meta charset="utf-8"/>
-    <meta name="description" content ="Xem lịch trình và đặt vé online" />
-    <meta name="author" content="Shannon1102"/>
-    <meta name="keyword" content="Nhà xe huy thông,xe khách bắc nam nhà xe huy thông,xe khách bắc nam,Xe khách bắc nam,Xe khách huy thông" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
-    <h1><p style ="color: purple;font-family : 'Times New Roman', Times, serif;">Chào các bạn đến trang web của chúng tôi .!</p></h1>
-    <p><qoute style="font-size : 25px;text-align :center;color: blue">
-        Phục vụ quý khách là vinh dự của chúng tôi !
-        <cite><pre><i>Boss : Huy Thông</i></pre></cite> 
+    <!-- <h1 id="loveQuestion" style="font: Brush Script MT;">Thôi đừng có dỗi nữa mà :((</h1> -->
+    <div id="head-container">
+        <!-- <img src="logo.png"> -->
+        <h1 id="title">Hehe :3</h1>
+        <img src="khoc.gif" id="head-image" alt="status-image"  width="350" style="background-color: transparent"/>
+        <!-- <img src="" id="head-image" alt="status-image"  width="250" /> -->
 
-    </qoute></p>
-    <dl><dt>
-Giới thiệu về nhà xe:
-    </dt>
-    <dd>
-        <p><pre>Địa điểm : Thôn 8,Hoằng Thành Hoằng Hóa Thanh Hóa</pre></p>
-        <p><pre>Ông chủ :Lê Huy Thông<br> Với 20 năm kinh nghiệm trong nghề đầy nhiệt huyết mà thân thiện với khách hàng</pre></p>
 
-    </dd>
-    <dt>
-        <p>Xem lịch xe chạy:</p>
+    </div>
+    <!-- <div>
+        <img src="logo.png">
+        <img src="khoc.gif" id="head-image" alt="status-image"  width="250" />
+        <img src="" id="head-image" alt="status-image"  width="250" />
+    </div> -->
 
-    </dt>
-    <dd>
-        <p><pre><u>Xe vào ngày</u> : 2 -6-10-16-20-24</pre></p>
-        <p><pre><u>Xe ra ngày </u> : 4 -8-12-18-22-28</pre></p>
-        </dd>
-    </dl>
-    <dt>Liên hệ nhà xe :</dt>
-    <dd>
-        <pre>
-            <dt>Số  đt:</dt>
-            <dd style="text-align: left "> 0369797235</dd>
-            <dd style="text-align: left"> 0936917085</dd>
-            <dd style="text-align: left"> 987026536</dd>
-        </pre> 
-    </dd>
+
+    <input type="button" id="btnYes" value="CÓ" onclick="yesClick()"/>
+    <input type="button" id="btnNo" value="KHÔNG" onmouseover="noHover()"/>
+
+    <!-- <img src="laonhao.gif" alt="this slowpoke moves"  width="250" />
+    <img src="leuleu.gif" alt="this slowpoke moves"  width="250" />  -->
+    <img src="vomong.gif" alt="this slowpoke moves"  width="550" />
+    <img src="cat1.gif" alt="this slowpoke moves"  width="550" />
+    <img src="vomong.gif" alt="this slowpoke moves"  width="550" />
+    <!-- <img src="cat1.gif" alt="this slowpoke moves"  width="550" /> -->
+    <!-- <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="laonhao.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="leuleu.gif" alt="this slowpoke moves"  width="250" />
+    <img src="vomong.gif" alt="this slowpoke moves"  width="250" />
+    <img src="cat1.gif" alt="this slowpoke moves"  width="250" />
+    <img src="vomong.gif" alt="this slowpoke moves"  width="250" />
+    <img src="cat1.gif" alt="this slowpoke moves"  width="250" />
+    <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="laonhao.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="leuleu.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="vomong.gif" alt="this slowpoke moves"  width="250" />
+    <img src="cat1.gif" alt="this slowpoke moves"  width="250" />
+    <img src="vomong.gif" alt="this slowpoke moves"  width="250" />
+    <img src="cat1.gif" alt="this slowpoke moves"  width="250" />
+    <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="laonhao.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="leuleu.gif" alt="this slowpoke moves"  width="250" /> -->
+    <!-- <img src="vomong.gif" alt="this slowpoke moves"  width="250" />
+    <img src="cat1.gif" alt="this slowpoke moves"  width="250" />
+    <img src="vomong.gif" alt="this slowpoke moves"  width="250" />
+    <img src="cat1.gif" alt="this slowpoke moves"  width="250" /> -->
 </body>
+<script>
+    let count = 0; 
+    function yesClick() {
+        // alert("Tối nay, lên hồ chơi em nhé!");
+        document.getElementById("head-image").src = "tungtim.gif";
+    }
 
+    function noHover() {
+        count++;
+        if(count <20 ) {
+            if(count == 1) {
+                document.getElementById("btnYes").style.left =  "860px";
+                document.getElementById("btnYes").style.top =  "450px";
+            } 
+            if(count %4 == 0) {
+
+
+            }
+            var x = Math.floor(Math.random() * (window.innerWidth-200));
+            var y = Math.floor(Math.random() * (window.innerHeight-200));
+            document.getElementById("btnNo").style.left = x + "px";
+            document.getElementById("btnNo").style.top = y + "px";
+            document.getElementById("test").innerHTML= window.innerWidth;
+        } else {
+            var myobj = document.getElementById("btnNo");
+            myobj.remove();
+
+        }
+       
+       
+    }
+</script>
 </html>
